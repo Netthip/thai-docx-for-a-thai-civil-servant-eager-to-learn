@@ -13,7 +13,7 @@
 > - **`main` (เวอร์ชันนี้)** — ฉบับเต็มสำหรับ**ข้าราชการ**: รวมฟอนต์แห่งชาติ 10 ตระกูล + preset เอกสารราชการ (สารบรรณ) + สารบัญ/ตาราง/เลขหน้า
 > - **branch [`thai-docx`](../../tree/thai-docx)** — ฉบับเบสิกสำหรับ**คนทั่วไป**: เน้นแก้ข้อความไทยให้เต็มบรรทัด ไฟล์เล็ก ไม่รวมฟอนต์
 >
-> โหลดเฉพาะเบสิก: `git clone -b thai-docx https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git`
+> โหลดเฉพาะเบสิก: `git clone -b thai-docx https://github.com/Netthip/thai-docx-for-a-thai-civil-servant-eager-to-learn.git`
 
 ---
 
@@ -47,8 +47,8 @@
 ## ติดตั้ง
 
 ```bash
-git clone https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git
-cd Thai-docx-for-A-Thai-civil-servant-eager-to-learn
+git clone https://github.com/Netthip/thai-docx-for-a-thai-civil-servant-eager-to-learn.git
+cd thai-docx-for-a-thai-civil-servant-eager-to-learn
 pip install -r requirements.txt
 
 # ติดตั้งฟอนต์แห่งชาติเข้าเครื่อง (มีให้ในรีโป ไม่ต้องไปหาดาวน์โหลดที่อื่น)
