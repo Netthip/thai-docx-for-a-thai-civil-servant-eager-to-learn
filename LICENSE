@@ -19,15 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-────────────────────────────────────────────────────────────────────────────
-หมายเหตุเรื่องฟอนต์ / Note on bundled fonts:
-
-ฟอนต์ในโฟลเดอร์ fonts/ "ไม่" อยู่ภายใต้สัญญา MIT ข้างต้น แต่อยู่ภายใต้สัญญา
-อนุญาตของเจ้าของลิขสิทธิ์ฟอนต์เอง (กรมทรัพย์สินทางปัญญา DIP และ SIPA)
-โปรดดู fonts/LICENSE-NATIONAL-FONTS.txt — สรุปคือใช้/ทำซ้ำ/ดัดแปลง/แจกจ่ายได้ฟรี
-ห้ามขายฟอนต์โดยลำพัง
-
-The fonts in the fonts/ directory are NOT covered by the MIT license above.
-They are licensed by their respective copyright owners (DIP & SIPA).
-See fonts/LICENSE-NATIONAL-FONTS.txt for details.

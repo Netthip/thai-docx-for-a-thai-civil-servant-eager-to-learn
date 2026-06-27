@@ -1,17 +1,15 @@
-# Thai DOCX 🇹🇭📄
+# Thai DOCX 🇹🇭📄 (ฉบับเบสิก)
 
-> สร้างไฟล์ Word (.docx) ภาษาไทยให้ **เขียนเต็มบรรทัด ฟอนต์ถูกต้อง จัดหน้าสวยระดับเอกสารราชการ** — ใช้ฟรี ไม่ต้องแอดไลน์ใคร ไม่ต้องจ่ายเงิน
+> สร้างไฟล์ Word (.docx) ภาษาไทยให้ **เขียนเต็มบรรทัด ฟอนต์ถูกต้อง** — ใช้ฟรี ไม่ต้องแอดไลน์ใคร ไม่ต้องจ่ายเงิน
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 
 เครื่องมือสร้างเอกสาร Word ภาษาไทยด้วย Python ที่แก้ปัญหาคลาสสิก 2 ข้อซึ่งโปรแกรมสร้าง .docx ทั่วไปทำพลาด เปิดเป็นโอเพนซอร์สให้ใช้และแก้ไขได้อิสระ
 
-> 📦 **มี 2 เวอร์ชัน**
-> - **`main` (เวอร์ชันนี้)** — ฉบับเต็มสำหรับ**ข้าราชการ**: รวมฟอนต์แห่งชาติ 10 ตระกูล + preset เอกสารราชการ (สารบรรณ) + สารบัญ/ตาราง/เลขหน้า
-> - **branch [`thai-docx`](../../tree/thai-docx)** — ฉบับเบสิกสำหรับ**คนทั่วไป**: เน้นแก้ข้อความไทยให้เต็มบรรทัด ไฟล์เล็ก ไม่รวมฟอนต์
->
-> โหลดเฉพาะเบสิก: `git clone -b thai-docx https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git`
+> 📦 **นี่คือฉบับเบสิก (branch `thai-docx`)** เหมาะกับคนทั่วไป ไฟล์เล็ก เน้นแก้ข้อความไทยให้เต็มบรรทัด
+> ถ้าต้องการ**ฉบับเต็มสำหรับข้าราชการ** (รวมฟอนต์แห่งชาติ + preset เอกสารราชการ/สารบรรณ + สารบัญ/ตาราง/เลขหน้า)
+> ดูที่ branch [`main`](../../tree/main)
 
 ---
 
@@ -31,12 +29,7 @@
 
 - ✅ ข้อความไทยเต็มบรรทัด ไม่ตัดก่อนเวลา
 - ✅ ฟอนต์ไทยถูกต้องทุกเครื่อง (แก้บั๊ก Complex Script)
-- ✅ Preset จัดหน้า: **ราชการ (สารบรรณ)**, รายงานทั่วไป, บทความ/หนังสือ
-- ✅ หัวเรื่อง/หัวข้อย่อย 3 ระดับ, ย่อหน้า, bullet/เลขข้อหลายชั้น, อ้างอิง (quote), คำบรรยายภาพ
-- ✅ **ตาราง** จัดฟอนต์/หัวตารางให้อัตโนมัติ
-- ✅ **รูปภาพ** พร้อมคำบรรยาย
-- ✅ **สารบัญอัตโนมัติ** (TOC field ของ Word)
-- ✅ **หัวกระดาษ/ท้ายกระดาษ + เลขหน้า** (เช่น "หน้า ๑", "1 / 10")
+- ✅ หัวเรื่อง/หัวข้อย่อย, ย่อหน้า, bullet/เลขข้อ, ตาราง, รูปภาพ
 - ✅ ตัวหนา `**...**` / ตัวเอียง `*...*` แบบ markdown
 - ✅ ใช้ได้ทั้งแบบ CLI และเรียกจากโค้ด Python
 
@@ -45,63 +38,23 @@
 ## ติดตั้ง
 
 ```bash
-git clone https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git
+git clone -b thai-docx https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git
 cd Thai-docx-for-A-Thai-civil-servant-eager-to-learn
 pip install -r requirements.txt
-
-# ติดตั้งฟอนต์แห่งชาติเข้าเครื่อง (มีให้ในรีโป ไม่ต้องไปหาดาวน์โหลดที่อื่น)
-python scripts/install_fonts.py
 ```
 
-## 🔤 ฟอนต์แห่งชาติแถมมาในรีโป — ใช้ฟรี ไม่ต้องไปแอดไลน์ใครให้รำคาญ
-
-รีโปนี้รวม **ฟอนต์ราชการไทย 10 ตระกูล** ที่แจกจ่ายต่อได้ตามกฎหมายไว้ในโฟลเดอร์ [`fonts/`](fonts/) แล้ว — TH SarabunPSK, TH Krub, TH KoHo, TH Niramit AS, TH Kodchasal, TH Baijam, TH Chakra Petch, TH Fah kwang, TH K2D July8, TH Mali Grade 6 (พร้อมชุด IT๙ สำหรับเลขไทย)
-
-```bash
-python scripts/install_fonts.py            # ติดตั้งทั้ง 10 ตระกูล (ไม่ต้องสิทธิ์ admin)
-python scripts/thai_docx.py --list-fonts   # ดูชื่อ key ของฟอนต์ที่ใช้ได้
-```
-
-เลือกฟอนต์ตอนสร้างเอกสารด้วย key สั้น ๆ:
-
-```bash
-python scripts/thai_docx.py input.md -o out.docx --font krub      # หรือ koho, niramit, ...
-```
-
-```python
-create_docx(paragraphs, "out.docx", font_name="krub")   # รับทั้ง key และชื่อเต็ม
-```
-
-> ลิขสิทธิ์ฟอนต์: ใช้/ทำซ้ำ/ดัดแปลง/แจกจ่ายได้ฟรี ห้ามขายฟอนต์โดยลำพัง — ดู [`fonts/LICENSE-NATIONAL-FONTS.txt`](fonts/LICENSE-NATIONAL-FONTS.txt)
-> (กลุ่ม TH Charmonman/Srisakdi/Charm of AU ไม่ได้รวมไว้ เพราะสัญญาแจกจ่ายจำกัดเฉพาะ DIP/SIPA)
+> ต้องมีฟอนต์ไทย (เช่น **TH Sarabun New** ที่มากับ MS Office) ติดตั้งในเครื่องที่เปิดไฟล์
+> หรือเปลี่ยนฟอนต์ผ่านพารามิเตอร์ `--font` — ถ้าต้องการฟอนต์แห่งชาติแบบแถมมาในรีโป ดู branch `main`
 
 ---
 
 ## ใช้งานเร็ว (CLI)
 
 ```bash
-# จากไฟล์ markdown/ข้อความ → เอกสารราชการพร้อมสารบัญและเลขหน้า
-python scripts/thai_docx.py input.md -o output.docx \
-    --preset saraban --toc --page-number footer-center --title "รายงานประจำปี"
+python scripts/thai_docx.py input.md -o output.docx --title "รายงานประจำปี"
 ```
 
-รูปแบบไฟล์ input (markdown ง่าย ๆ):
-
-```markdown
-# บทที่ 1 บทนำ
-
-ย่อหน้าภาษาไทยที่จะ **เต็มบรรทัด** โดยอัตโนมัติ
-
-## 1.1 วัตถุประสงค์
-
-- ข้อแรก
-- ข้อสอง
-
-1. ขั้นตอนหนึ่ง
-2. ขั้นตอนสอง
-```
-
----
+รูปแบบไฟล์ input (markdown ง่าย ๆ): `#` `##` `###` = หัวข้อ, `-`/`*` = bullet, `1.` = เลขข้อ, `**ตัวหนา**`
 
 ## ใช้งานผ่านโค้ด Python
 
@@ -109,40 +62,16 @@ python scripts/thai_docx.py input.md -o output.docx \
 from thai_docx import create_docx
 
 paragraphs = [
-    {"text": "รายงานการทดสอบระบบ", "type": "title"},
+    {"text": "รายงานการทดสอบ", "type": "title"},
     {"text": "บทที่ ๑ บทนำ", "type": "heading1"},
     {"text": "เนื้อหาภาษาไทยที่รองรับ **ตัวหนา** และ *ตัวเอียง*", "type": "body"},
     {"text": "วัตถุประสงค์ข้อแรก", "type": "bullet"},
-    {"type": "table", "header": True, "rows": [
-        ["รายการ", "งบประมาณ (บาท)"],
-        ["ครุภัณฑ์", "1,250,000"],
-    ]},
 ]
 
-create_docx(
-    paragraphs, "output.docx",
-    preset="saraban",
-    title="รายงานประจำปี",
-    toc=True,
-    header_text="สำนักงบประมาณ",
-    page_number="footer-center",
-    page_number_format="หน้า {n}",
-)
+create_docx(paragraphs, "output.docx", font_size=16, line_spacing=1.5)
 ```
 
 ดูตัวอย่างเต็มที่ [`examples/example_report.py`](examples/example_report.py)
-
----
-
-## Preset การจัดหน้า
-
-| preset | ฟอนต์/ขนาด | ขอบ บน/ล่าง/ซ้าย/ขวา (ซม.) | เว้นบรรทัด | ย่อหน้าแรก |
-|---|---|---|---|---|
-| `saraban` | TH Sarabun New / 16 | 2.5 / 2.0 / 3.0 / 2.0 | 1.0 | 1.25 ซม. |
-| `default` | TH Sarabun New / 14 | 2.54 รอบด้าน | 1.5 | — |
-| `book` | TH Sarabun New / 16 | 2.54 / 2.54 / 3.0 / 2.54 | 1.3 | 1.25 ซม. |
-
-ระบุพารามิเตอร์เองเพื่อทับค่า preset ได้เสมอ (`font_name`, `font_size`, `margins`, `line_spacing`, ...)
 
 ---
 
@@ -152,17 +81,9 @@ create_docx(
 
 ---
 
-## หมายเหตุ
-
-- **สารบัญ (TOC)**: เป็น field ของ Word เปิดไฟล์แล้วคลิกขวาที่สารบัญ → **Update Field** (หรือกด F9) เพื่อให้เลขหน้าแสดงผล
-- การจัดข้อความใช้ **ชิดซ้าย** เสมอ เพราะ Justify จะยืดช่องว่างน่าเกลียดในภาษาไทย
-- ค่าขอบกระดาษของ preset `saraban` อิงแนวทางเอกสารราชการ ปรับได้ตามระเบียบ/หน่วยงานของคุณ
-
----
-
 ## License
 
-[MIT](LICENSE) — ใช้ฟรี แก้ไขได้ แจกจ่ายได้ ทั้งงานส่วนตัวและเชิงพาณิชย์ ไม่ต้องขออนุญาต
+[MIT](LICENSE) — ใช้ฟรี แก้ไขได้ แจกจ่ายได้ ทั้งงานส่วนตัวและเชิงพาณิชย์
 
 ## ขอบคุณ
 
