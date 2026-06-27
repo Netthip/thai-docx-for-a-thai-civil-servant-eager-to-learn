@@ -40,8 +40,8 @@
 ## ติดตั้ง
 
 ```bash
-git clone -b thai-docx https://github.com/Netthip/Thai-docx-for-A-Thai-civil-servant-eager-to-learn.git
-cd Thai-docx-for-A-Thai-civil-servant-eager-to-learn
+git clone -b thai-docx https://github.com/Netthip/thai-docx-for-a-thai-civil-servant-eager-to-learn.git
+cd thai-docx-for-a-thai-civil-servant-eager-to-learn
 pip install -r requirements.txt
 ```
 
