@@ -1,6 +1,6 @@
 # Thai DOCX 🇹🇭📄
 
-> สร้างไฟล์ Word (.docx) ภาษาไทยให้ **เขียนเต็มบรรทัด ฟอนต์ถูกต้อง จัดหน้าสวยระดับเอกสารราชการ** — ใช้ฟรี ไม่ต้องแอดไลน์ใคร ไม่ต้องจ่ายเงิน
+> สร้างไฟล์ Word (.docx) ภาษาไทยให้ **เขียนเต็มบรรทัด ฟอนต์ถูกต้อง จัดหน้าสวยระดับเอกสารราชการ** — ใช้ฟรี ไม่ต้องจ่ายเงิน
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
