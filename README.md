@@ -1,5 +1,19 @@
 # Thai DOCX 🇹🇭📄
 
+> ## ⚠️ เกษียณแล้ว (Archived · ก.ย. 2569)
+> repo นี้**หยุดพัฒนา** — เวอร์ชันนี้ (v2) ยังใช้จริงในงานราชการไม่ได้:
+> ระยะห่างไม่นิ่ง (ตั้งค่าเฉพาะบางย่อหน้า) · ตัดคำไม่เป็นคำที่อ่านได้ (ยัด ZWSP ทุกรอยต่อ) ·
+> ตัวหนังสือเบียด/สระชน (default สั่งฟอนต์ที่ไม่ได้แถมมา + line spacing แน่นเกิน) ·
+> ตารางเป็น docx ล้วน คำนวณไม่ได้ (ไม่มี Excel แถมยัดอักขระล่องหนลงตัวเลข)
+>
+> **ตัวจริงย้ายไปพัฒนาต่อเป็น v3** ใน [Gift-Command-Center](https://github.com/Netthip/Gift-Command-Center)
+> ที่ `core/thai_docx.py` — แก้ครบทั้ง 4 ข้อ + ออกตารางเป็น .xlsx ที่มีสูตรคำนวณจริง
+> อ่านรายละเอียด: [`core/thai-docx-SKILL.md`](https://github.com/Netthip/Gift-Command-Center/blob/master/core/thai-docx-SKILL.md)
+>
+> ฟอนต์แห่งชาติทั้งหมดถูกยกไปเก็บที่ `Gift-Command-Center/core/fonts/` แล้ว ·
+> ประวัติและโค้ด v2 ใน repo นี้คงไว้เพื่ออ้างอิง (read-only)
+
+
 > สร้างไฟล์ Word (.docx) ภาษาไทยให้ **เขียนเต็มบรรทัด ฟอนต์ถูกต้อง จัดหน้าสวยระดับเอกสารราชการ** — ใช้ฟรี ไม่ต้องจ่ายเงิน
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)

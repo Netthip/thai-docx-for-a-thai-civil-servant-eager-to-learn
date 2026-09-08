@@ -1,3 +1,8 @@
+## v3 (ก.ย. 2569) — ย้ายบ้าน
+
+พัฒนาต่อใน Gift-Command-Center (`core/thai_docx.py`) — repo นี้เกษียณ/archive
+ดูสิ่งที่แก้ทั้งหมดใน `core/thai-docx-SKILL.md` ของ repo ปลายทาง
+
 # Changelog
 
 ## 2.1.0
